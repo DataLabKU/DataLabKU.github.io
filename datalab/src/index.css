@@ -1,0 +1,141 @@
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --ku-navy:  #0A2342;
+  --ku-white: #FFFFFF;
+
+  --bg:      #0A2342;
+  --bg2:     #081a30;
+  --bg-deep: #051525;
+
+  --purple: #FFFFFF;
+  --violet: #FFFFFF;
+  --pink:   #FFFFFF;
+  --cyan:   rgba(255, 255, 255, 0.85);
+
+  --text:    #FFFFFF;
+  --heading: #FFFFFF;
+  --muted:   rgba(255, 255, 255, 0.55);
+  --border:  rgba(255, 255, 255, 0.18);
+
+  --nav-bg:     rgba(10, 35, 66, 0.94);
+  --nav-border: rgba(255, 255, 255, 0.15);
+  --nav-link:   rgba(255, 255, 255, 0.6);
+  --nav-link-active: #FFFFFF;
+
+  --card-bg: rgba(255, 255, 255, 0.025);
+  --card-hover-border: rgba(255, 255, 255, 0.45);
+  --card-hover-shadow: rgba(255, 255, 255, 0.15);
+
+  --btn-primary-bg:     var(--ku-white);
+  --btn-primary-fg:     var(--ku-navy);
+  --btn-primary-shadow: rgba(255, 255, 255, 0.2);
+
+  --gradient-text:       linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0.55) 100%);
+  --gradient-label:      linear-gradient(90deg, #FFFFFF, rgba(255,255,255,0.7));
+  --gradient-stat:       linear-gradient(135deg, #FFFFFF, rgba(255,255,255,0.7));
+  --gradient-brand:      linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0.55) 100%);
+  --gradient-accent-bar: linear-gradient(90deg, #FFFFFF, rgba(255,255,255,0.8), rgba(255,255,255,0.55));
+
+  --bg-light:               #C8D4E3;
+  --bg-light-soft:          #D4DEEA;
+  --text-on-light:          var(--ku-navy);
+  --muted-on-light:         rgba(10, 35, 66, 0.68);
+  --border-on-light:        rgba(10, 35, 66, 0.16);
+  --surface-on-light:       rgba(10, 35, 66, 0.07);
+  --surface-on-light-hover: rgba(10, 35, 66, 0.11);
+
+  --modal-overlay: rgba(10, 35, 66, 0.92);
+  --modal-bg:      linear-gradient(180deg, #0A2342, #081a30);
+  --modal-border:  rgba(255, 255, 255, 0.35);
+  --modal-shadow:  rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+
+  --bg:      #EFF3F8;
+  --bg2:     #E3EAF2;
+  --bg-deep: #0A2342;
+
+  --purple: var(--ku-navy);
+  --violet: var(--ku-navy);
+  --pink:   var(--ku-navy);
+  --cyan:   rgba(10, 35, 66, 0.75);
+
+  --text:    #0A2342;
+  --heading: #0A2342;
+  --muted:   rgba(10, 35, 66, 0.62);
+  --border:  rgba(10, 35, 66, 0.14);
+
+  --nav-bg:     rgba(239, 243, 248, 0.94);
+  --nav-border: rgba(10, 35, 66, 0.1);
+  --nav-link:   rgba(10, 35, 66, 0.62);
+  --nav-link-active: #0A2342;
+
+  --card-bg: rgba(10, 35, 66, 0.04);
+  --card-hover-border: rgba(10, 35, 66, 0.28);
+  --card-hover-shadow: rgba(10, 35, 66, 0.1);
+
+  --btn-primary-bg:     var(--ku-navy);
+  --btn-primary-fg:     var(--ku-white);
+  --btn-primary-shadow: rgba(10, 35, 66, 0.18);
+
+  --gradient-text:       linear-gradient(135deg, #0A2342 0%, rgba(10,35,66,0.75) 50%, rgba(10,35,66,0.55) 100%);
+  --gradient-label:      linear-gradient(90deg, #0A2342, rgba(10,35,66,0.65));
+  --gradient-stat:       linear-gradient(135deg, #0A2342, rgba(10,35,66,0.65));
+  --gradient-brand:      linear-gradient(135deg, #0A2342 0%, rgba(10,35,66,0.75) 50%, rgba(10,35,66,0.55) 100%);
+  --gradient-accent-bar: linear-gradient(90deg, #0A2342, rgba(10,35,66,0.75), rgba(10,35,66,0.5));
+
+  --bg-light:               #FFFFFF;
+  --bg-light-soft:          #F7F9FC;
+  --text-on-light:          var(--ku-navy);
+  --muted-on-light:         rgba(10, 35, 66, 0.68);
+  --border-on-light:        rgba(10, 35, 66, 0.12);
+  --surface-on-light:       rgba(10, 35, 66, 0.05);
+  --surface-on-light-hover: rgba(10, 35, 66, 0.08);
+
+  --modal-overlay: rgba(10, 35, 66, 0.55);
+  --modal-bg:      linear-gradient(180deg, #FFFFFF, #EFF3F8);
+  --modal-border:  rgba(10, 35, 66, 0.16);
+  --modal-shadow:  rgba(10, 35, 66, 0.18);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a { text-decoration: none; color: inherit; }
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@keyframes neonPulse {
+  0%, 100% { opacity: 0.35; }
+  50%      { opacity: 0.9; }
+}
+
+@keyframes gradShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes dotPulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.4); }
+}

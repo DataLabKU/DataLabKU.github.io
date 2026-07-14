@@ -1,0 +1,29 @@
+{
+  "name": "datalab",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://datalabku.github.io",
+  "type": "module",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
+    "jsdom": "^25.0.1",
+    "vite": "^6.0.3",
+    "vitest": "^3.0.5"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
