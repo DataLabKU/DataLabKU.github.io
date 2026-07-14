@@ -43,8 +43,8 @@ export const peopleGroups = [
     tier: 'ms',
     members: [
       { id: 'halghanem', initials: 'HG', name: 'Humoud Alghanem', title: 'MSc Student · NLP in Banking', role: 'MSc', colorClass: 'violet' },
-      { id: 'aalabdulsalam', initials: 'AA', name: 'Abdullah Alabdulsalam', title: 'MSc Student · NLP in Banking', role: 'MSc', colorClass: 'cyan' },
-      { id: 'salmaamari', initials: 'SM', name: 'Sulaiman Almaamari', title: 'MSc Student · NLP in Banking', role: 'MSc', colorClass: 'pink' },
+      { id: 'aalabdulsalam', initials: 'AA', name: 'Abdullah Alabdulsalam', title: 'MSc Student · Hypergraph Learning for Mental Health', role: 'MSc', colorClass: 'cyan' },
+      { id: 'salmaamari', initials: 'SM', name: 'Sulaiman Almaamari', title: 'MSc Student · NLP for Speech Disorders', role: 'MSc', colorClass: 'pink' },
     ],
   },
   {
