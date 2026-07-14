@@ -24,6 +24,6 @@
     "preview": "vite preview",
     "test": "vitest run",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -b main -r https://github.com/DataLabKU/DataLabKU.github.io.git"
   }
 }
