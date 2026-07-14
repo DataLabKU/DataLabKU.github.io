@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react({ include: /\.(jsx|js)$/ })],
-  base: '/',
+  base: '/DataLabKU.github.io',
   esbuild: {
     loader: 'jsx',
     include: /src\/.*\.jsx?$/,
