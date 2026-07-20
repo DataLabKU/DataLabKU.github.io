@@ -35,7 +35,7 @@ export const peopleGroups = [
         website: 'https://www.lalkulaib.com/',
         colorClass: 'purple-cyan',
         photo: `${base}images/people/lulualkulaib.png`,
-        photoFocus: { x: '50%', y: '32%', zoom: 0.7 },
+        photoFocus: { x: '50%', y: '32%', zoom: 0.5 },
       },
     ],
   },
