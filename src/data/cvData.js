@@ -3,9 +3,9 @@ export const cvByName = {
     bio: 'Dr. Lulwah AlKulaib leads DATA Lab at Kuwait University, researching hypergraph learning, financial crime detection, and Arabic NLP.',
     email: 'lalkulaib@cs.ku.edu.kw',
     linkedin: '', // e.g. 'https://www.linkedin.com/in/lalkulaib'
-    education: ['Ph.D. in Computer Science', 'Kuwait University'],
-    research: ['Hypergraph neural networks', 'AML & transaction graphs', 'Arabic NLP in banking'],
-    highlights: ['Director, DATA Lab', 'Publications at KDD, WWW, EMNLP, SIGMOD'],
+    education: ['Ph.D. in Computer Science', 'Virginia Tech'],
+    research: ['Hypergraph networks', 'Low-Resource NLP', 'Social Network Analysis', 'Public Health Modeling', 'Financial Modeling'],
+    highlights: ['Director, DATA Lab', 'Publications at IEEE Big Data, ICDM, PAKDD'],
   },
   // 'Humoud Alghanem': {
   //   bio: 'MSc researcher focused on Arabic financial NLP and knowledge extraction from banking text.',
