@@ -28,6 +28,10 @@ export default function PersonAvatar({ person, size = 'card', className = '' }) 
         <img
           src={person.photo}
           alt={person.name}
+          width={size === 'director' ? 104 : size === 'modal' ? 96 : 84}
+          height={size === 'director' ? 104 : size === 'modal' ? 96 : 84}
+          loading="lazy"
+          decoding="async"
           style={photoStyle(person.photoFocus)}
           onError={() => setImgError(true)}
         />

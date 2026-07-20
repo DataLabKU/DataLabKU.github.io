@@ -253,3 +253,10 @@
 }
 
 .cv-link:hover { color: var(--cyan); }
+
+.person-avatar img,
+.partners-logo-img img {
+  image-rendering: auto;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}

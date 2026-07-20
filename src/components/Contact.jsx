@@ -31,9 +31,14 @@ export default function Contact() {
           </div>
         </FadeIn>
         <FadeIn>
-          <div className="map-placeholder">
-            <i className="ti ti-map-2" />
-            <span>Sabah AlSalem University City, Kuwait</span>
+          <div className="contact-map" aria-label="Map showing Sabah AlSalem University City in Kuwait">
+            <iframe
+              title="DATA Lab location at Sabah AlSalem University City"
+              src="https://www.google.com/maps?q=Sabah%20AlSalem%20University%20City%20Kuwait&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
           <a
             href="https://maps.google.com/?q=Sabah+AlSalem+University+City+Kuwait"
