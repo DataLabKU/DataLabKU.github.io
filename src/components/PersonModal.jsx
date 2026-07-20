@@ -83,8 +83,13 @@ export default function PersonModal({ person, tier, onClose }) {
             </section>
           )}
         </div>
-        {(cv.email || cv.linkedin || cv.links?.github || cv.links?.linkedin) && (
+        {(person.website || cv.email || cv.linkedin || cv.links?.github || cv.links?.linkedin) && (
           <div className="cv-modal-footer">
+            {person.website && (
+              <a href={person.website} target="_blank" rel="noopener noreferrer" className="cv-link">
+                <i className="ti ti-world" /> Website
+              </a>
+            )}
             {cv.email && <a href={`mailto:${cv.email}`} className="cv-link"><i className="ti ti-mail" /> {cv.email}</a>}
             {cv.links?.github && <a href={cv.links.github} target="_blank" rel="noopener noreferrer" className="cv-link"><i className="ti ti-brand-github" /> GitHub</a>}
             {(cv.linkedin || cv.links?.linkedin) && (
