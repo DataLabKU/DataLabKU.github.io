@@ -41,7 +41,7 @@
   align-items: center;
   gap: 8px;
   padding: 13px 28px;
-  border: none;
+  border: 1px solid color-mix(in srgb, var(--btn-primary-bg) 70%, var(--border));
   border-radius: 10px;
   font-family: inherit;
   font-size: 14px;
@@ -50,10 +50,11 @@
   cursor: pointer;
   background: var(--btn-primary-bg);
   box-shadow: 0 4px 20px var(--btn-primary-shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .btn-primary:hover {
+  border-color: var(--btn-primary-bg);
   transform: translateY(-2px);
   box-shadow: 0 8px 30px var(--btn-primary-shadow);
 }
@@ -157,6 +158,10 @@
   box-shadow: 0 8px 28px rgba(10, 35, 66, 0.08);
 }
 
+.section--light .pub-card-title {
+  color: var(--ku-navy);
+}
+
 .section--light .pub-panel {
   background: rgba(255, 255, 255, 0.82);
   border-color: var(--border-on-light);
@@ -165,6 +170,20 @@
 .section--light .pub-search-wrap {
   background: #FFFFFF;
   border-color: var(--border-on-light);
+}
+
+.section--light .pub-link-btn,
+.section--light .pub-cite-btn {
+  background: #FFFFFF;
+  border-color: rgba(10, 35, 66, 0.24);
+  color: var(--ku-navy);
+}
+
+.section--light .pub-link-btn:hover,
+.section--light .pub-cite-btn:hover {
+  background: var(--ku-navy);
+  border-color: var(--ku-navy);
+  color: #FFFFFF;
 }
 
 .section--light .contact-glow {
@@ -193,7 +212,8 @@
   color: rgba(10, 35, 66, 0.65);
 }
 
-.section--light .map-placeholder {
+.section--light .map-placeholder,
+.section--light .contact-map {
   background: var(--surface-on-light);
   border-color: var(--border-on-light);
 }
@@ -204,6 +224,15 @@
 
 .section--light .map-placeholder span {
   color: var(--muted-on-light);
+}
+
+
+.section--light .btn-primary {
+  border-color: var(--ku-navy);
+}
+
+.section--light .btn-primary:hover {
+  border-color: var(--ku-navy);
 }
 
 .section--light .btn-outline {
@@ -267,6 +296,7 @@ nav {
   height: 100%;
   object-fit: contain;
   object-position: center center;
+  image-rendering: auto;
 }
 
 .footer-brand-lockup {
@@ -422,6 +452,14 @@ nav {
   color: rgba(255, 255, 255, 0.55);
   max-width: 480px;
   margin-bottom: 36px;
+}
+
+#hero .btn-primary {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+#hero .btn-primary:hover {
+  border-color: rgba(255, 255, 255, 0.45);
 }
 
 #hero .btn-outline {
@@ -1406,6 +1444,23 @@ nav {
 }
 
 .contact-row-text a:hover { color: var(--cyan); }
+
+.contact-map {
+  width: 100%;
+  height: 280px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 .map-placeholder {
   width: 100%;

@@ -7,7 +7,10 @@ export default function BrandLogo({ variant = 'nav' }) {
         src={brandAssets.logo}
         alt={brandAssets.logoAlt}
         className="brand-logo"
+        width="250"
+        height="250"
         decoding="async"
+        loading="eager"
       />
     </span>
   );
