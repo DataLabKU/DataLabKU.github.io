@@ -158,6 +158,10 @@
   box-shadow: 0 8px 28px rgba(10, 35, 66, 0.08);
 }
 
+.section--light .pub-card-title {
+  color: var(--ku-navy);
+}
+
 .section--light .pub-panel {
   background: rgba(255, 255, 255, 0.82);
   border-color: var(--border-on-light);
@@ -292,6 +296,7 @@ nav {
   height: 100%;
   object-fit: contain;
   object-position: center center;
+  image-rendering: auto;
 }
 
 .footer-brand-lockup {
@@ -447,6 +452,14 @@ nav {
   color: rgba(255, 255, 255, 0.55);
   max-width: 480px;
   margin-bottom: 36px;
+}
+
+#hero .btn-primary {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+#hero .btn-primary:hover {
+  border-color: rgba(255, 255, 255, 0.45);
 }
 
 #hero .btn-outline {
