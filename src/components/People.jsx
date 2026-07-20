@@ -12,52 +12,21 @@ function PersonCard({ person, tier, onSelect }) {
 
   return (
     <FadeIn className={`person-card person-card--${tier} person-card--clickable`}>
-      <div className="person-card-btn">
-        <button
-          type="button"
-          className="person-avatar-btn"
-          onClick={openCv}
-          aria-label={`View CV for ${person.name}`}
-        >
-          <PersonAvatar
-            person={person}
-            size={tier === 'director' ? 'director' : 'card'}
-          />
-        </button>
-
-        {person.website ? (
-          <a
-            className="person-name-btn"
-            href={person.website}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {person.name}
-          </a>
-        ) : (
-          <button
-            type="button"
-            className="person-name-btn"
-            onClick={openCv}
-          >
-            {person.name}
-          </button>
-        )}
-
+      <button
+        type="button"
+        className="person-card-btn"
+        onClick={openCv}
+        aria-label={`View CV for ${person.name}`}
+      >
+        <PersonAvatar
+          person={person}
+          size={tier === 'director' ? 'director' : 'card'}
+        />
+        <span className="person-name-btn">{person.name}</span>
         <p className="person-title">{person.title}</p>
-
-        <span className={`role-badge role-badge--${tier}`}>
-          {person.role}
-        </span>
-
-        <button
-          type="button"
-          className="person-view-cv"
-          onClick={openCv}
-        >
-          View CV →
-        </button>
-      </div>
+        <span className={`role-badge role-badge--${tier}`}>{person.role}</span>
+        <span className="person-view-cv">View CV →</span>
+      </button>
     </FadeIn>
   );
 }
