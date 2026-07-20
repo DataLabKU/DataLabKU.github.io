@@ -2,7 +2,8 @@
 
 Single-page website for the **DATA Lab** (AI & Data Science Research Laboratory) at Kuwait University's Department of Computer Science.
 
-**Live site:** [datalabku.github.io](https://datalabku.github.io)
+**Live site:** [www.datalabku.org/](https://www.datalabku.org/)
+**Developed by:** [Abdullah Almekhyal](https://github.com/mekhyal)
 
 ## Tech Stack
 
@@ -69,6 +70,6 @@ Then in GitHub repo **Settings → Pages**, set source to the `gh-pages` branch.
 
 ## Lab Info
 
-- **Director:** Dr. Lulwah AlKulaib
+- **Director:** [Dr. Lulwah AlKulaib] (https://www.lalkulaib.com/)
 - **Email:** lalkulaib@cs.ku.edu.kw
 - **GitHub:** [github.com/datalabku](https://github.com/datalabku)

@@ -32,6 +32,7 @@ export const peopleGroups = [
         name: 'Dr. Lulwah AlKulaib',
         title: 'Assistant Professor & Lab Director',
         role: 'Director',
+        website: 'https://www.lalkulaib.com/',
         colorClass: 'purple-cyan',
         photo: `${base}images/people/lulualkulaib.png`,
         photoFocus: { x: '50%', y: '32%', zoom: 1.08 },
