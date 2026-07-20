@@ -3,13 +3,17 @@ import { useState } from 'react';
 function photoStyle(focus = {}) {
   const x = focus.x || '50%';
   const y = focus.y || '28%';
-  const zoom = focus.zoom ?? 1.2;
+  const zoom = focus.zoom ?? 1;
 
   return {
     objectFit: 'cover',
     objectPosition: `${x} ${y}`,
-    transform: `scale(${zoom})`,
-    transformOrigin: `${x} ${y}`,
+    ...(zoom !== 1
+      ? {
+          transform: `scale(${zoom})`,
+          transformOrigin: `${x} ${y}`,
+        }
+      : {}),
   };
 }
 
