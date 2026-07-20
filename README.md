@@ -70,6 +70,6 @@ Then in GitHub repo **Settings → Pages**, set source to the `gh-pages` branch.
 
 ## Lab Info
 
-- **Director:** [Dr. Lulwah AlKulaib] (https://www.lalkulaib.com/)
+- **Director:** [Dr. Lulwah AlKulaib](https://www.lalkulaib.com/)
 - **Email:** lalkulaib@cs.ku.edu.kw
 - **GitHub:** [github.com/datalabku](https://github.com/datalabku)
