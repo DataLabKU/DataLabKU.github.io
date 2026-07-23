@@ -15,7 +15,7 @@ export default function Hero() {
           Advancing <span className="gradient-text">AI &amp; Data</span> Science Research
         </h1>
         <p className="hero-subtitle">
-          We build intelligent systems at the intersection of hypergraph learning, mental health AI, graph learning, and NLP driving innovation that matters.
+          We build intelligent systems at the intersection of graph learning, NLP, behavioral modeling, and network analysis driving innovation that matters.
         </p>
         <div className="hero-buttons">
           <a href="#research"><button type="button" className="btn-primary">Our Research</button></a>
