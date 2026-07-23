@@ -11,10 +11,10 @@ export const navLinks = [
 
 export const researchAreas = [
   { num: '01', icon: 'ti-atom-2', title: 'Hypergraph Learning', description: 'Beyond pairwise: learning with higher-order relationships in complex data systems.' },
-  { num: '02', icon: 'ti-heart', title: 'AI for Mental Health', description: 'Modeling mental health and well-being with data-driven, interpretable AI methods.' },
-  { num: '03', icon: 'ti-topology-star-3', title: 'Graph Systems', description: 'Scalable computation, streaming graph processing, and large-scale graph analytics.' },
-  { num: '04', icon: 'ti-message-language', title: 'NLP', description: 'Arabic NLP, document understanding, and knowledge extraction from text.' },
-  { num: '05', icon: 'ti-brain', title: 'Machine Learning', description: 'Deep architectures, representation learning, and transfer learning at scale.' },
+  { num: '02', icon: 'ti-topology-star-3', title: 'Graph Systems', description: 'Scalable computation, streaming graph processing, and large-scale graph analytics.' },
+  { num: '03', icon: 'ti-message-language', title: 'NLP', description: 'Arabic NLP, document understanding, and knowledge extraction from text.' },
+  { num: '04', icon: 'ti-brain', title: 'Machine Learning', description: 'Deep architectures, representation learning, and transfer learning at scale.' },
+  { num: '05', icon: 'ti-heart', title: 'AI for Behavioral Health', description: 'Modeling mental health and well-being with data-driven, interpretable AI methods.' },
   { num: '06', icon: 'ti-shield-check', title: 'Financial Crime Detection', description: 'Graph-based AML, money laundering patterns, and fraud detection via network analysis.' },
   { num: '07', icon: 'ti-database', title: 'Data Management', description: 'Efficient storage, querying, and processing of large-scale heterogeneous datasets.' },
   { num: '08', icon: 'ti-network', title: 'Network Science', description: 'Community detection, link prediction, and dynamic network evolution modeling.' },
