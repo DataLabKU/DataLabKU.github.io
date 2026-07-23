@@ -16,6 +16,7 @@ export default function About() {
     href="https://www.lalkulaib.com"
     target="_blank"
     rel="noopener noreferrer"
+    style={{ textDecoration: "underline" }}
   >
     Dr. Lulwah AlKulaib
   </a>
