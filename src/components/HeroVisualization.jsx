@@ -74,13 +74,13 @@ export default function HeroVisualization() {
         <animate attributeName="r" values="13;18;13" dur="3.2s" repeatCount="indefinite" />
       </circle>
       <circle cx="70" cy="220" r="8" fill="rgba(255,255,255,0.55)" />
-      <text x="70" y="245" textAnchor="middle" fill="rgba(255,255,255,0.75)" fontSize="8" fontFamily="Inter, sans-serif">FinCrime</text>
+      <text x="70" y="245" textAnchor="middle" fill="rgba(255,255,255,0.75)" fontSize="8" fontFamily="Inter, sans-serif">Mental Health</text>
 
       <circle cx="330" cy="220" r="13" fill="none" stroke="#FFFFFF" strokeWidth="1" opacity="0.3">
         <animate attributeName="r" values="13;18;13" dur="3.8s" repeatCount="indefinite" />
       </circle>
       <circle cx="330" cy="220" r="8" fill="#FFFFFF" />
-      <text x="330" y="245" textAnchor="middle" fill="rgba(255,255,255,0.75)" fontSize="8" fontFamily="Inter, sans-serif">Vision</text>
+      <text x="330" y="245" textAnchor="middle" fill="rgba(255,255,255,0.75)" fontSize="8" fontFamily="Inter, sans-serif">FinCrime</text>
 
       <circle cx="200" cy="165" r="11" fill="none" stroke="rgba(255,255,255,0.75)" strokeWidth="1" opacity="0.3">
         <animate attributeName="r" values="11;16;11" dur="2.8s" repeatCount="indefinite" />

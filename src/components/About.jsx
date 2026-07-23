@@ -11,7 +11,7 @@ export default function About() {
           <h2 className="section-title">Pushing the Frontiers of Intelligent Systems</h2>
           <div className="about-text">
             <p>
-              DATA Lab at Kuwait University&apos;s Department of Computer Science is a research group dedicated to advancing artificial intelligence and data science. We develop intelligent systems that bridge graph learning, hypergraph networks, natural language processing, and financial intelligence building tools that are scalable, interpretable, and applicable to real-world challenges.
+              DATA Lab at Kuwait University&apos;s Department of Computer Science is a research group dedicated to advancing artificial intelligence and data science. We develop intelligent systems that put hypergraph learning and mental health applications first, while bridging graph learning, natural language processing, and financial intelligence with scalable, interpretable tools.
             </p>
           </div>
           <div className="about-stats">
