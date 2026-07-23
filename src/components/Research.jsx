@@ -8,7 +8,7 @@ export default function Research() {
       <SectionHeader
         label="What We Do"
         title="Research Areas"
-        description="Our lab explores cutting-edge problems across graph learning, NLP, financial intelligence, and large-scale data systems."
+        description="Our lab puts hypergraph learning and mental health applications first, alongside graph learning, NLP, and financial intelligence."
       />
       <div className="research-grid">
         {researchAreas.map((area) => (

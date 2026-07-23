@@ -17,12 +17,12 @@ const VENUE_TYPE_LABELS = {
 export const AREA_LABELS = {
   social: 'Social Media Analytics',
   nlp: 'NLP',
-  health: 'Public Health',
+  health: 'Mental & Public Health',
   graph: 'Graph & Hypergraph Learning',
   ml: 'Machine Learning',
 };
 
-const AREA_ORDER = ['social', 'nlp', 'health', 'graph', 'ml'];
+const AREA_ORDER = ['graph', 'health', 'social', 'nlp', 'ml'];
 
 function readBracedValue(text, start) {
   if (text[start] !== '{') return null;
