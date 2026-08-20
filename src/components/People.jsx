@@ -8,25 +8,43 @@ import { peopleGroups } from '../data/content';
 import { cvByName } from '../data/cvData';
 
 function PersonCard({ person, tier, onSelect }) {
-  const openCv = () => onSelect(person, tier);
+  const cv = cvByName[person.name];
+  const hasCv = Boolean(cv && Object.keys(cv).length > 0);
+  const [role, research] = person.title.split(' · ');
+  const academicRole = tier === 'ms'
+    ? 'MSc Researcher'
+    : tier === 'undergraduate'
+      ? 'Undergraduate Researcher'
+      : role;
+  const researchFocus = research || cv?.research?.slice(0, 2).join(', ');
+  const ProfileSurface = hasCv ? 'button' : 'article';
 
   return (
-    <FadeIn className={`person-card person-card--${tier} person-card--clickable`}>
-      <button
-        type="button"
-        className="person-card-btn"
-        onClick={openCv}
-        aria-label={`View CV for ${person.name}`}
+    <FadeIn className={`person-profile-wrap person-profile-wrap--${tier}`}>
+      <ProfileSurface
+        type={hasCv ? 'button' : undefined}
+        className={`person-profile${hasCv ? ' person-profile--interactive' : ''}`}
+        onClick={hasCv ? (event) => onSelect(person, tier, event.currentTarget) : undefined}
+        aria-label={hasCv ? `View CV for ${person.name}` : undefined}
       >
-        <PersonAvatar
-          person={person}
-          size={tier === 'director' ? 'director' : 'card'}
-        />
-        <span className="person-name-btn">{person.name}</span>
-        <p className="person-title">{person.title}</p>
-        <span className={`role-badge role-badge--${tier}`}>{person.role}</span>
-        <span className="person-view-cv">View CV →</span>
-      </button>
+        <div className="person-profile-media">
+          <PersonAvatar
+            person={person}
+            size="profile"
+          />
+        </div>
+        <div className="person-profile-info">
+          <h4 className="person-name">{person.name}</h4>
+          <p className="person-role">{academicRole}</p>
+          {researchFocus && (
+            <div className="person-research">
+              <span className="person-research-label">Research</span>
+              <span className="person-research-value">{researchFocus}</span>
+            </div>
+          )}
+          {hasCv && <span className="person-cv-link">View CV ↗</span>}
+        </div>
+      </ProfileSurface>
     </FadeIn>
   );
 }
@@ -39,7 +57,7 @@ export default function People() {
       <SectionHeader
         label="The Team"
         title="People"
-        description="Meet the researchers driving innovation at DATA Lab. Click a name to view their CV."
+        description="Meet the researchers driving innovation at DATA Lab."
       />
       <div className="people-groups">
         {peopleGroups.map((group) => (
@@ -51,7 +69,7 @@ export default function People() {
                   key={person.name}
                   person={person}
                   tier={group.tier}
-                  onSelect={(p, t) => setSelected({ person: { ...p, cv: cvByName[p.name] }, tier: t })}
+                  onSelect={(p, t, trigger) => setSelected({ person: { ...p, cv: cvByName[p.name] }, tier: t, trigger })}
                 />
               ))}
             </div>
@@ -63,6 +81,7 @@ export default function People() {
         <PersonModal
           person={selected.person}
           tier={selected.tier}
+          trigger={selected.trigger}
           onClose={() => setSelected(null)}
         />
       )}

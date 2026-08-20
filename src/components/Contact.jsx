@@ -42,11 +42,10 @@ export default function Contact() {
           </div>
           <a
             href="https://maps.google.com/?q=Sabah+AlSalem+University+City+Kuwait"
+            className="btn-primary btn-full"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <button type="button" className="btn-primary btn-full">Get Directions</button>
-          </a>
+          >Get directions <span aria-hidden="true">→</span></a>
         </FadeIn>
       </div>
     </section>

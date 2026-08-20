@@ -31,7 +31,7 @@ export const cvByName = {
   'Abdullah Almekhyal': {
     bio: 'Undergraduate researcher working on graph-based AML and financial crime detection.',
     email: 'a.almekhyal05@gmail.com',
-    linkedin: '', // e.g. 'https://www.linkedin.com/in/abdullah-almekhyal'
+    linkedin: 'https://www.linkedin.com/in/abdullah-almekhyal', // e.g. 'https://www.linkedin.com/in/abdullah-almekhyal'
     education: ['BSc in Computer Science (in progress)', 'Kuwait University'],
     research: ['Graph-based AML', 'Transaction network analysis'],
     highlights: ['Suspicious pattern detection in transaction graphs'],
@@ -39,7 +39,7 @@ export const cvByName = {
   'Yousef Joudah': {
     bio: 'Undergraduate researcher focused on financial crime intelligence and graph analytics.',
     email: '',
-    linkedin: '', // e.g. 'https://www.linkedin.com/in/yousefjoudeh'
+    linkedin: 'https://www.linkedin.com/in/yousefjoudeh', // e.g. 'https://www.linkedin.com/in/yousefjoudeh'
     education: ['BSc in Computer Science (in progress)', 'Kuwait University'],
     research: ['Financial crime detection', 'Graph machine learning'],
     highlights: ['Network patterns in financial crime datasets'],

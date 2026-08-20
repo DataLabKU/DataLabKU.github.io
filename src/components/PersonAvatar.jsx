@@ -1,14 +1,26 @@
 import { useState } from 'react';
 
-function photoStyle(focus = {}) {
+function photoStyle(person, size) {
+  const focus = person.photoFocus || {};
+  const fit = person.imageFit || (size === 'profile' || size === 'modal' ? 'contain' : 'cover');
   const x = focus.x || '50%';
   const y = focus.y || '28%';
   const zoom = focus.zoom ?? 1;
+  const scale = size === 'modal'
+    ? person.modalImageScale ?? 0.86
+    : person.imageScale ?? (fit === 'contain' ? 1 : 1);
+  const position = person.imagePosition || (fit === 'contain' ? 'center bottom' : `${x} ${y}`);
 
   return {
-    objectFit: 'cover',
-    objectPosition: `${x} ${y}`,
-    ...(zoom !== 1
+    objectFit: fit,
+    objectPosition: position,
+    ...(scale !== 1
+      ? {
+          width: `${scale * 100}%`,
+          height: `${scale * 100}%`,
+        }
+      : {}),
+    ...(zoom !== 1 && fit === 'cover'
       ? {
           transform: `scale(${zoom})`,
           transformOrigin: `${x} ${y}`,
@@ -32,7 +44,7 @@ export default function PersonAvatar({ person, size = 'card', className = '' }) 
           height={size === 'director' ? 104 : size === 'modal' ? 96 : 84}
           loading="lazy"
           decoding="async"
-          style={photoStyle(person.photoFocus)}
+          style={photoStyle(person, size)}
           onError={() => setImgError(true)}
         />
       </div>
@@ -40,8 +52,8 @@ export default function PersonAvatar({ person, size = 'card', className = '' }) 
   }
 
   return (
-    <div className={`avatar ${person.colorClass} ${sizeClass} ${className}`.trim()}>
-      {person.initials}
+    <div className={`person-avatar avatar ${person.colorClass} ${sizeClass} ${className}`.trim()}>
+      {person.initials || person.name.split(/\s+/).map((part) => part[0]).join('').slice(0, 2).toUpperCase()}
     </div>
   );
 }

@@ -2,11 +2,9 @@ import { useState } from 'react';
 import BrandLogo from './BrandLogo';
 import { navLinks } from '../data/content';
 import useActiveNav from '../hooks/useActiveNav';
-import { useTheme } from '../context/ThemeContext';
 
 export default function Nav() {
-  const activeSection = useActiveNav(['research', 'publications', 'people', 'about', 'partners', 'contact']);
-  const { theme, toggleTheme } = useTheme();
+  const activeSection = useActiveNav(['research','about', 'publications', 'people', 'partners', 'contact']);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
@@ -15,6 +13,10 @@ export default function Nav() {
     <nav className={menuOpen ? 'nav--open' : ''}>
       <a href="#hero" className="nav-brand" aria-label="DATA Lab home" onClick={closeMenu}>
         <BrandLogo variant="nav" />
+        <span className="nav-identity">
+          <strong>DATA Lab</strong>
+          <small>Kuwait University</small>
+        </span>
       </a>
       <ul className="nav-links">
         {navLinks.map((link) => (
@@ -30,18 +32,7 @@ export default function Nav() {
         ))}
       </ul>
       <div className="nav-actions">
-        <button
-          type="button"
-          className="theme-toggle"
-          onClick={toggleTheme}
-          aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-          title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
-        >
-          <i className={`ti ${theme === 'dark' ? 'ti-sun' : 'ti-moon'}`} />
-        </button>
-        <a href="#contact" onClick={closeMenu}>
-          <button type="button" className="nav-cta">Join Us →</button>
-        </a>
+        <a href="#contact" className="nav-cta" onClick={closeMenu}>Join the lab <span aria-hidden="true">→</span></a>
         <button
           type="button"
           className="nav-menu-toggle"

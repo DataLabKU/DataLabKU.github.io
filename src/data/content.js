@@ -2,10 +2,10 @@ const base = import.meta.env.BASE_URL;
 
 export const navLinks = [
   { href: '#research', label: 'Research', section: 'research' },
+  { href: '#about', label: 'About', section: 'about' },
   { href: '#publications', label: 'Publications', section: 'publications' },
   { href: '#people', label: 'People', section: 'people' },
-  { href: '#about', label: 'About', section: 'about' },
-  { href: '#partners', label: 'Partners', section: 'partners' },
+  // { href: '#partners', label: 'Partners', section: 'partners' },
   { href: '#contact', label: 'Contact', section: 'contact' },
 ];
 
@@ -35,7 +35,9 @@ export const peopleGroups = [
         website: 'https://www.lalkulaib.com/',
         colorClass: 'purple-cyan',
         photo: `${base}images/people/lulualkulaib.png`,
-        photoFocus: { x: '50%', y: '32%', zoom: 1.08 },
+        imageFit: 'contain',
+        imageScale: 1,
+        imagePosition: 'center bottom',
       },
     ],
   },
@@ -60,7 +62,9 @@ export const peopleGroups = [
         role: 'Undergraduate',
         colorClass: 'cyan',
         photo: `${base}images/people/abdullahalmekhyal.png`,
-        photoFocus: { x: '50%', y: '30%', zoom: 1.1 },
+        imageFit: 'contain',
+        imageScale: 1,
+        imagePosition: 'center bottom',
       },
       {
         id: 'yjoudah',
@@ -70,7 +74,9 @@ export const peopleGroups = [
         role: 'Undergraduate',
         colorClass: 'violet',
         photo: `${base}images/people/yousefjoudah.png`,
-        photoFocus: { x: '50%', y: '28%', zoom: 1.1 },
+        imageFit: 'contain',
+        imageScale: 1,
+        imagePosition: 'center bottom',
       },
     ],
   },

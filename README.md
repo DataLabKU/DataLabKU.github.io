@@ -12,7 +12,7 @@ Single-page website for the **DATA Lab** (AI & Data Science Research Laboratory)
 - React 18 + Vite
 - CSS with design tokens and animations
 - Tabler Icons (CDN)
-- Inter font (Google Fonts)
+- IBM Plex Sans font (Google Fonts)
 
 ## Project Structure
 

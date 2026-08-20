@@ -8,12 +8,11 @@ export default function Research() {
       <SectionHeader
         label="What We Do"
         title="Research Areas"
-        description="Our lab puts hypergraph learning and mental health applications first, alongside graph learning, NLP, and financial intelligence."
+        description="Our work spans graph-based learning, language, behavioral applications, and financial intelligence."
       />
       <div className="research-grid">
         {researchAreas.map((area) => (
           <FadeIn key={area.num} className="research-card">
-            <div className="card-icon"><i className={`ti ${area.icon}`} /></div>
             <div className="card-num">{area.num}</div>
             <h3>{area.title}</h3>
             <p>{area.description}</p>

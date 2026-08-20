@@ -1,29 +1,27 @@
 import FadeIn from './FadeIn';
-import HeroVisualization from './HeroVisualization';
 
 export default function Hero() {
   return (
     <section id="hero">
-      <div className="hero-grid-bg" />
-      <div className="hero-glow" />
       <FadeIn className="hero-content">
-        <div className="hero-tag">
-          <span className="dot" />
-          Kuwait University · CS Dept.
-        </div>
+        <div className="hero-tag">DATA Lab · Kuwait University</div>
         <h1>
-          Advancing <span className="gradient-text">AI &amp; Data</span> Science Research
+          Research in data, intelligence, and complex systems.
         </h1>
         <p className="hero-subtitle">
-          We build intelligent systems at the intersection of graph learning, NLP, behavioral modeling, and network analysis driving innovation that matters.
+          DATA Lab is a research laboratory in Kuwait University&apos;s Department of Computer Science. We study machine learning, graph systems, natural language processing, and applied data science.
         </p>
         <div className="hero-buttons">
-          <a href="#research"><button type="button" className="btn-primary">Our Research</button></a>
-          <a href="#contact"><button type="button" className="btn-outline">Join the Lab</button></a>
+          <a href="#research" className="btn-primary">Explore our research <span aria-hidden="true">→</span></a>
+          <a href="#people" className="hero-text-link">Meet the lab <span aria-hidden="true">→</span></a>
         </div>
-      </FadeIn>
-      <FadeIn className="hero-visual">
-        <HeroVisualization />
+        <ul className="hero-topics" aria-label="Research focus">
+          <li>Hypergraph Learning</li>
+          <li>Graph Systems</li>
+          <li>Arabic NLP</li>
+          <li>Behavioral Health</li>
+          <li>Financial Intelligence</li>
+        </ul>
       </FadeIn>
     </section>
   );
