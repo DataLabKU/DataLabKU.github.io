@@ -78,6 +78,18 @@ export const peopleGroups = [
         imageScale: 1,
         imagePosition: 'center bottom',
       },
+      {
+        // id: 'yjoudah',
+        initials: 'AJ',
+        name: 'Ahmed Jlidi',
+        title: 'Undergraduate Researcher · Anomoly Detection',
+        role: 'Undergraduate',
+        colorClass: 'pink',
+        // photo: `${base}images/people/yousefjoudah.png`,
+        imageFit: 'contain',
+        imageScale: 1,
+        imagePosition: 'center bottom',
+      },
     ],
   },
 ];
