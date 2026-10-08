@@ -85,7 +85,7 @@ export const peopleGroups = [
         title: 'Undergraduate Researcher · Anomoly Detection',
         role: 'Undergraduate',
         colorClass: 'pink',
-        photo: `${base}images/people/Ahmed.png`,
+        photo: `${base}images/people/Ahmed.jpg`,
         imageFit: 'contain',
         imageScale: 1,
         imagePosition: 'center bottom',
