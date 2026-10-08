@@ -79,7 +79,7 @@ export const peopleGroups = [
         imagePosition: 'center bottom',
       },
       {
-        // id: 'yjoudah',
+        id: 'AJlidi',
         initials: 'AJ',
         name: 'Ahmed Jlidi',
         title: 'Undergraduate Researcher · Anomoly Detection',
