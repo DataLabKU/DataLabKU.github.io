@@ -44,11 +44,11 @@ export const cvByName = {
     research: ['Financial crime detection', 'Graph machine learning'],
     highlights: ['Network patterns in financial crime datasets'],
   },
-  // 'Ahmad Jlidi': {
-  //   bio: 'Undergraduate researcher exploring NLP for Arabic banking documents.',
-  //   linkedin: '',
-  //   education: ['BSc in Computer Science (in progress)', 'Kuwait University'],
-  //   research: ['NLP & banking', 'Arabic text processing'],
-  //   highlights: ['DATA Lab NLP projects in banking'],
-  // },
+  'Ahmad Jlidi': {
+    bio: 'Undergraduate researcher exploring NLP for Arabic banking documents.',
+    linkedin: '',
+    education: ['BSc in Computer Science (in progress)', 'Kuwait University'],
+    research: ['NLP & banking', 'Arabic text processing'],
+    highlights: ['DATA Lab NLP projects in banking'],
+  },
 };
